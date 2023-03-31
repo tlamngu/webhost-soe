@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Dancing+Script:wght@700&family=Playfair+Display&family=Roboto+Slab:wght@700&display=swap");
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body{
+  overflow-y: hidden;
+}
+html::-webkit-scrollbar{
+  width: 5px;
+}
+html::-webkit-scrollbar-thumb{
+  background-color: rgb(24, 25, 26);
+  border: 1px;
+  max-height: 100px;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+._body .section{
+  position: relative;
+}
+._body .section > h2{
+  font-size: xx-large;
+  font-family: 'Roboto Slab', serif;
+  min-height: 50px; width: 100%;
+  text-align: center;
+}
+.section > div{
+  margin-top: 50px;
+}
+.activistContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.activistContainer > h3{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.activistContainer > img{
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 1000px;
+  width: 60%;
+  background-color: rgb(24, 25, 26);
+}
+.IntroductionTable{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.IntroductionTable .ContentTable{
+  width: 50%;
+}
+.ContentTable > h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ContentTable > p{
+  font-family: 'Roboto Slab', serif;
+
+}
+
+
+
+footer{
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  padding-top: 10px;
+  width: 100vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.footerLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+footer .footerSection .footerLogo > img{
+  width: 40%;
+}
+.footerLogo > h3{
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.5em;
+  margin: 5px;
+}
+footer .footerSection{
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  align-items: center;
+}
+.bindList{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: small;
+}
+.bindList >*{
+  color: black;
+  font-size: 1.2em;
+  margin: 5px;
+}
+#copyright{
+  position: absolute;
+  bottom: 5px;
+  font-family: 'Roboto Slab', serif;
+  opacity: 0.5;
+}
+@media only screen and (max-width: 1500px) {
+  ._body .section{
+    width: 100%;
+  }
+  .IntroductionTable .ContentTable{
+    width: 70%;
+  }
+  .ContentTable > h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .ContentTable > p{
+    font-family: 'Roboto Slab', serif;
+  }
+}
